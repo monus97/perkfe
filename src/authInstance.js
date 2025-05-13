@@ -3,19 +3,18 @@ import axios from "axios";
 
 const baseURL = process.env.REACT_APP_BASE_URL;
 
-const authInstance = axios.create({
-  baseURL: `${baseURL}`,
-  headers: {
-    "Content-Type": "application/json", // default for JSON requests
-  },
-});
 // const authInstance = axios.create({
-//   baseURL: `http://localhost:5000`,
-//   withCredentials: true,
+//   baseURL: `${baseURL}`,
 //   headers: {
-//     "Content-Type": "application/json",
+//     "Content-Type": "application/json", // default for JSON requests
 //   },
 // });
+const authInstance = axios.create({
+  baseURL: `https://perkbe.onrender.com`,
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
 authInstance.interceptors.request.use(
   (config) => {
     const token = sessionStorage.getItem("token");
