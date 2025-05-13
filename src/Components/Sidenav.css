@@ -1,0 +1,157 @@
+/* Sidenav.css */
+
+/* Sidebar Container */
+.sidebartwo {
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    color: black;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.sidebartwo.closed {
+    transform: translateX(-100%);
+    /* Slide to the left when closed */
+    display: none;
+}
+
+.sidebartwo.open {
+    transform: translateX(0);
+    /* Slide in from the left when open */
+    display: block;
+}
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    color: black;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar.closed {
+    transform: translateX(-100%);
+    /* Slide to the left when closed */
+    display: none;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+    /* Slide in from the left when open */
+    display: block;
+}
+
+/* Sidebar header */
+.sidebar h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* List styling */
+.sidebar .list-unstyled {
+    padding-left: 0;
+    margin: 0;
+}
+
+.sidebar .list-unstyled li {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.sidebartwo .list-unstyled li {
+    padding: 10px 15px;
+}
+
+/* Links */
+.sidebar a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.sidebartwo a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+
+/* Submenu */
+.submenu {
+    padding-left: 20px;
+    list-style-type: none;
+    margin: 0;
+}
+
+/* .submenu a {
+    background-color: #007bff;
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 16px;
+} */
+
+
+
+/* Button to toggle sidebar */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+
+.selected {
+    background-color: #007bff;
+    /* Change the background color when selected */
+    color: white;
+    /* Ensure text color changes to white when selected */
+}
+
+.selected a {
+    color: white;
+    /* Ensures the text inside the selected item stays white */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 10px 15px;
+}
+
+.logo h3 {
+    font-size: 18px;
+    font-weight: 500;
+}

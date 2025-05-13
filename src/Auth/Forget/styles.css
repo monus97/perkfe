@@ -1,0 +1,210 @@
+.background {
+    background-image: url('../../Assets/Auth/perkmaster_bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    padding: 100px 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .signup {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .signup-container {
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 0px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .two {
+    width: 50%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 0px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+  }
+  
+  .forgetTexts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .signup-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .signup-container input,
+  .signup-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+  
+  .inputs:focus{
+    border:none !important;
+    box-shadow: none;
+    outline:1px solid #ccc;
+  }
+  
+  .signup-container button {
+    background-color: #0039F4;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .signup-container .error {
+    color: red;
+    font-size: 12px;
+    margin-top: -5px;
+  }
+  
+  @media (max-width: 600px) {
+    .signup-container {
+        padding: 15px;
+    }
+  
+    .signup-container h2 {
+        font-size: 20px;
+    }
+  
+    .signup-container input,
+    .signup-container button {
+        padding: 8px;
+        font-size: 14px;
+    }
+  }
+  
+  /* Tablet and Above */
+  @media (min-width: 601px) {
+    .signup-container {
+        max-width: 500px;
+    }
+  
+    .signup-container input,
+    .signup-container button {
+        font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .signup-container {
+        max-width: 600px;
+    }
+  
+    .signup-container h2 {
+        font-size: 28px;
+    }
+  
+    .signup-container input,
+    .signup-container button {
+        font-size: 18px;
+    }
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .flag-code img {
+    width: 20px; 
+    margin-right: 5px; 
+  } 
+  
+  input {
+    width: 100%;
+    padding-left: 35px; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  input::placeholder {
+    color: #888;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+
+  
+  .successfield {
+    position: relative;
+    top: -100px;
+    display: flex;
+    align-items: start;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color:#29AF3D;
+    margin: 20px 0px;
+    color: #ffff;
+    text-align: center;
+    justify-content: center;
+  }
+  .errorField {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color:#D13A3A;
+    margin: 20px 0px;
+    color: #ffff;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .passwordField {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 0px 10px 0px 0px;
+    background-color: #ffff;
+    margin: 20px 0px;
+    justify-content: space-between;
+  }
+  
+  .flag-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 10px; 
+  }
+  
+  .flag {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px; 
+  }
+  
+  .country-code {
+    color: #7f7d83;
+    font-size: 16px;
+  }
+  
+
+  
+  
+  

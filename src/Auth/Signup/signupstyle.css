@@ -1,0 +1,243 @@
+.background {
+    background-image: url('../../Assets/Auth/perkmaster_bg.jpg'); /* Corrected */
+    background-size: cover; /* Optional: makes the image cover the entire container */
+    background-position: center; /* Optional: centers the background image */
+    padding: 50px 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.signup {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Base styles for the sign-up form */
+.signup-container {
+    width: 100%;
+    /* max-width: 400px; */
+    /* Adjusted for a wider form */
+    margin: 0px auto;
+    padding: 20px;
+    border: 0px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+}
+
+.twos {
+    width: 50%;
+    /* max-width: 400px; */
+    /* Adjusted for a wider form */
+    margin: 0px auto;
+    padding: 20px;
+    border: 0px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  }
+
+.signup-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.signup-container input,
+.signup-container button {
+    width: 100%;
+    /* Ensures inputs and button are full width */
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.inputs:focus{
+    border:none !important;
+    box-shadow: none;
+    outline:1px solid #ccc;
+}
+
+.signup-container button {
+    background-color: #0039F4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-container .error {
+    color: red;
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+/* Responsive Design - Mobile First */
+@media (max-width: 600px) {
+    .signup-container {
+        padding: 15px;
+    }
+
+    .signup-container h2 {
+        font-size: 20px;
+    }
+
+    .signup-container input,
+    .signup-container button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Tablet and Above */
+@media (min-width: 601px) {
+    .signup-container {
+        max-width: 500px;
+    }
+
+    .signup-container input,
+    .signup-container button {
+        font-size: 16px;
+    }
+}
+
+/* Large Screen (Desktop and Above) */
+@media (min-width: 1024px) {
+    .signup-container {
+        max-width: 600px;
+    }
+
+    .signup-container h2 {
+        font-size: 28px;
+    }
+
+    .signup-container input,
+    .signup-container button {
+        font-size: 18px;
+    }
+}
+
+.input-container {
+    position: relative;
+}
+/* 
+.flag-code {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+}*/
+
+.flag-code img {
+    width: 20px; 
+    margin-right: 5px; 
+} 
+
+input {
+    width: 100%;
+    padding-left: 35px; /* Space for the flag and country code */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* .mobile-input {
+    padding-left: 500px;
+} */
+
+.errorField {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color:#D13A3A;
+    margin: 20px 0px;
+    color: #ffff;
+    text-align: center;
+    justify-content: center;
+  }
+.mobileField {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: #ffff;
+    margin: 20px 0px;
+  }
+.passwordField {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 0px 10px 0px 0px;
+    background-color: #ffff;
+    margin: 20px 0px;
+    justify-content: space-between;
+  }
+  
+  .flag-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 10px; /* Space between flag and country code */
+  }
+  
+  .flag {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px; /* Space between flag and country code */
+  }
+  
+  .country-code {
+    color: #7f7d83;
+    font-size: 16px;
+  }
+  
+  .mobile-input {
+    border: none !important;
+    outline: none !important;
+    padding: 8px 12px !important;
+    margin: 0px !important;
+    font-size: 16px;
+    border-radius: 10px; /* Optional: for rounded input field */
+    width: 100%; /* Ensures input field stretches to fill remaining space */
+  }
+  
+  .mobile-input::placeholder {
+    color: #7f7d83; /* Color of the placeholder */
+  }
+  
+
+
+/* For Webkit Browsers (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.icon {
+    height: 10px;
+    align-items: center;
+    justify-content: center;
+}

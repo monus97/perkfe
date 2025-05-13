@@ -1,0 +1,10 @@
+.hero {
+  background-image: url(../../../Assets/Organzations/2148054826\ 1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.crd{
+    background: linear-gradient(to bottom, #B4B4B4, #4D4D4D);
+}

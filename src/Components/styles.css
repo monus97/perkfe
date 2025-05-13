@@ -1,0 +1,123 @@
+/* General Layout with Flexbox */
+.layouts {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  transition: all 0.3s ease;
+}
+
+/* Sidebar Styling */
+.sidenav {
+  width: 250px; /* Sidebar width */
+  background-color: #333;
+  color: white;
+  height: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.sidenav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav li {
+  margin: 10px 0;
+}
+
+.sidenav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Toggle Sidebar */
+.sidenav.open {
+  transform: translateX(0); /* Show the sidebar */
+}
+
+.sidenav.closed {
+  transform: translateX(-100%); /* Hide the sidebar */
+}
+
+/* Main Content Styling */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 250px; /* Default margin when sidebar is open */
+  transition: margin-left 0.3s ease;
+}
+
+/* When sidebar is closed, move content to the left */
+.layouts.sidebar-closed .main-content {
+  margin-left: 100px;
+}
+
+/* Header Styling */
+.header {
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  transition: padding 0.3s ease;
+}
+
+.header.with-sidebar {
+  padding-left: 20px; /* When the sidebar is open */
+}
+
+.header.without-sidebar {
+  padding-left: 0; /* When the sidebar is closed */
+}
+
+/* Content Styling */
+.content {
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 60px); /* Take full height minus header height */
+  background-color: #f4f4f4;
+  margin-top: 10px;
+}
+
+.titleButton {
+  margin: 10px;
+}
+.head {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.profilesection {
+  display: flex;
+  align-items: center;
+}
+.headerProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.role{
+  color: #9C9C9C;
+  font-size: 10px;
+  font-weight: 500;
+}
+.name {
+  font-size: 14px;
+  font-weight: 500;
+}
+.profileimage {
+  height: 50px;
+  width: 50px;
+  border: #828BB9 solid 2px;
+  border-radius: 50%;
+}
+.imagesection {
+  display: flex;
+  align-items: center;
+}

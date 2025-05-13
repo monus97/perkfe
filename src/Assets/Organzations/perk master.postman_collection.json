@@ -1,0 +1,526 @@
+{
+	"info": {
+		"_postman_id": "357a1b52-cd84-476c-9eae-ae0cff14beb8",
+		"name": "perk master",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35341892",
+		"_collection_link": "https://moonhive-0683.postman.co/workspace/My-Workspace~05b6d917-64c1-405d-8ffe-a4edfec07cae/collection/35341892-357a1b52-cd84-476c-9eae-ae0cff14beb8?action=share&source=collection_link&creator=35341892"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgetpassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"abhijithspatharam04@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/forgotpassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"forgotpassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"abhijithspatharam04@gmail.com\",\r\n    \"password\":\"Abhi@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Superadmin",
+			"item": [
+				{
+					"name": "Organizations",
+					"item": [
+						{
+							"name": "organization list",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzhlNWU3NWI0ZDEwN2JhMTkwMjkzMTQiLCJpYXQiOjE3NDI1MzU4OTcsImV4cCI6MTc0MzE0MDY5NywidHlwZSI6ImFjY2VzcyJ9.O6ktCXiJTYuIez92f22sjZlFJsYrBeTfSLDjr-O9aVk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/superAdmin/organizations/list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"superAdmin",
+										"organizations",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get details",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzhlNWU3NWI0ZDEwN2JhMTkwMjkzMTQiLCJpYXQiOjE3NDI5ODI1NTEsImV4cCI6MTc0MzU4NzM1MSwidHlwZSI6ImFjY2VzcyJ9.u7tIK79b8qQP3JLcRZLFMUO7TXlHMnjGSzQ1vQHMyUI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/superAdmin/organizations/ORG36373",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"superAdmin",
+										"organizations",
+										"ORG36373"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzhlNWU3NWI0ZDEwN2JhMTkwMjkzMTQiLCJpYXQiOjE3NDI5ODI1NTEsImV4cCI6MTc0MzU4NzM1MSwidHlwZSI6ImFjY2VzcyJ9.u7tIK79b8qQP3JLcRZLFMUO7TXlHMnjGSzQ1vQHMyUI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Appu\",\r\n    \"email\": \"appu@gmail.com\",\r\n    \"contact\": \"7654326789\",\r\n    \"street\": \"Street address\",\r\n    \"city\": \"kollam\",\r\n    \"state\": \"Kerala\",\r\n    \"pincode\": 876543,\r\n    \"contactPerson\": \"Jaohn\",\r\n    \"country\": \"India\",\r\n    \"logo\": \"jhjkjfwe.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/superAdmin/organizations/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"superAdmin",
+										"organizations",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzhlNWU3NWI0ZDEwN2JhMTkwMjkzMTQiLCJpYXQiOjE3NDI5ODI1NTEsImV4cCI6MTc0MzU4NzM1MSwidHlwZSI6ImFjY2VzcyJ9.u7tIK79b8qQP3JLcRZLFMUO7TXlHMnjGSzQ1vQHMyUI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/superAdmin/order/list?page=1&key=&pageSize=2&orgId=ORG36373",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"superAdmin",
+										"order",
+										"list"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "PM1737383541261",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "key",
+											"value": ""
+										},
+										{
+											"key": "pageSize",
+											"value": "2"
+										},
+										{
+											"key": "orgId",
+											"value": "ORG36373"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "dasboard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzhlNWU3NWI0ZDEwN2JhMTkwMjkzMTQiLCJpYXQiOjE3NDA3MzcyMzksImV4cCI6MTc0MTM0MjAzOSwidHlwZSI6ImFjY2VzcyJ9.troHRitTUDQOf9XAc2co0v4MtmE4xLum-5G1awCyg_M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/superAdmin/dashboard?filterData=lastYear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"superAdmin",
+								"dashboard"
+							],
+							"query": [
+								{
+									"key": "filterData",
+									"value": "lastYear"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orderlist",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzhlNWU3NWI0ZDEwN2JhMTkwMjkzMTQiLCJpYXQiOjE3NDA3MzcyMzksImV4cCI6MTc0MTM0MjAzOSwidHlwZSI6ImFjY2VzcyJ9.troHRitTUDQOf9XAc2co0v4MtmE4xLum-5G1awCyg_M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/order/list?status=cancelled",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"order",
+								"list"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "cancelled"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customerlist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzhlNWU3NWI0ZDEwN2JhMTkwMjkzMTQiLCJpYXQiOjE3NDA3MzcyMzksImV4cCI6MTc0MTM0MjAzOSwidHlwZSI6ImFjY2VzcyJ9.troHRitTUDQOf9XAc2co0v4MtmE4xLum-5G1awCyg_M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/admin/customer/list?page=1&pageSize=10&key=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"customer",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customerDetails",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzhlNWU3NWI0ZDEwN2JhMTkwMjkzMTQiLCJpYXQiOjE3NDA3MzcyMzksImV4cCI6MTc0MTM0MjAzOSwidHlwZSI6ImFjY2VzcyJ9.troHRitTUDQOf9XAc2co0v4MtmE4xLum-5G1awCyg_M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/admin/customer/PM1737383541261",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"customer",
+								"PM1737383541261"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order by customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzhlNWU3NWI0ZDEwN2JhMTkwMjkzMTQiLCJpYXQiOjE3NDEzNDIyOTMsImV4cCI6MTc0MTk0NzA5MywidHlwZSI6ImFjY2VzcyJ9.1p4vP22sYoXHDo-WBjc7fQP1iGEx9f5U705CWXB3fyo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/superAdmin/order/list/PM1737383541261",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"superAdmin",
+								"order",
+								"list",
+								"PM1737383541261"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get trends",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzhlNWU3NWI0ZDEwN2JhMTkwMjkzMTQiLCJpYXQiOjE3NDI5ODI1NTEsImV4cCI6MTc0MzU4NzM1MSwidHlwZSI6ImFjY2VzcyJ9.u7tIK79b8qQP3JLcRZLFMUO7TXlHMnjGSzQ1vQHMyUI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/user/order/trends?employeeId=PM1737383541261&filterData=&from=&to=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"order",
+								"trends"
+							],
+							"query": [
+								{
+									"key": "employeeId",
+									"value": "PM1737383541261"
+								},
+								{
+									"key": "orgId",
+									"value": "ORG36373",
+									"disabled": true
+								},
+								{
+									"key": "filterData",
+									"value": ""
+								},
+								{
+									"key": "from",
+									"value": ""
+								},
+								{
+									"key": "to",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

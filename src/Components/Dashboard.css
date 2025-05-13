@@ -1,0 +1,67 @@
+.container {
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    padding: 20px;
+  }
+.container h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+.container p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #95919D;
+}
+  
+  .card {
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .card-text {
+    font-size: 32px !important;
+    font-weight: 500 !important;
+  }
+  .input-group {
+    width:40%;
+    display: flex;
+  }
+  .input-group-customeDate {
+    width: 15%;
+    display: flex;
+  }
+  .selectField {
+    display: flex;
+    flex-direction: column; 
+  }
+  .greeting-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .welcome-text {
+    padding-top: 10px;
+  }
+/* Ensuring that the select box has padding to accommodate the dropdown arrow */
+.select-dropdown {
+    appearance: auto;  /* Use default styling (including the default arrow) */
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    padding-right: 30px;  /* Space to display the default arrow */
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .left-align {
+    margin-left: 0; /* Ensure it's positioned at the left */
+    padding-left: 0;
+}
+    

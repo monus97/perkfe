@@ -1,0 +1,4 @@
+/* Apply box-sizing: border-box globally to all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
